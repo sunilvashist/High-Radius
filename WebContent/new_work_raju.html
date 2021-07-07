@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Invoice List</title>
+	<style>
+        body{
+          background-color: rgba(45,66,80,255);  
+        z-index: 1;
+        }
+        
+        /* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(45,66,80,255);
+}
+         form {
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: rgba(45,66,80,255);
+  display: none;
+  width: 600px;
+  color: white;
+  font-family: arial;
+             z-index: 2;
+}
+				#formButton {
+  display: block;
+  margin-left: auto;
+  
+}
+			.btn {
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #1E90FF;
+  float: right;
+}
+				.button1{
+					border-radius: 12px;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(45,66,80,255);
+  float: right;
+				}
+				.button2{
+					color: #1E90FF;
+					background-color: rgba(45,66,80,255);
+					 border: none;
+				}
+
+
+        
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+            border: 40px solid rgba(40,58,70,255);
+            background-color: rgba(45,66,80,255);
+}
+            
+            td {
+/*  border: 5px solid black;*/
+  text-align: left;
+  padding: 8px;
+  
+}
+                     th {
+/*  border:  solid #1a0000;*/
+  text-align: left;
+  padding: 8px;
+                          background-color: rgba(57,73,94,255);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(40,58,70,255);
+}
+            tr:nth-child(odd) {
+  background-color: rgba(46,68,81,255);
+} 
+        
+     .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}   
+        
+/*        Add button css*/
+        		.main-add{
+					border-radius: 12px;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(45,66,80,255);
+/*  float: right;*/
+                    margin-right: 500px;
+				}
+        
+
+  
+    </style>
+</head>
+	<body>
+     <div class="row">
+         <div class="column">
+             <img src="./images/Group%2020399.svg"> </div>
+             <div class="column">
+          <img src="./images/logo.svg" >
+          </div>
+        </div>
+    
+		<div class="table-container">
+			<h1 class="heading" style="color: white">Invoice List</h1>
+
+				
+				<form id="form1">
+							<b> Add Invoice </b>
+							<br>
+							<hr>
+ 						 <b>Customer Name*</b> <input type="text" name="firstName" required>
+  						<b>Due Date* </b><input type="date" name="duedate" required>
+  						<br><br>
+  						<b>Customer No.* </b><input type="text" name="customerno" required>
+  						<b>Notes </b> <textarea name="Notes"></textarea>
+  						<br><br>
+  						<b> Invoice No.*</b><input type="text" name="invoiceno" required>
+  						<br><br>
+  						<b> Invoice Amount *</b><input type="text" name="amount" required>
+  						<br><br>
+  						<hr>
+  						<button type="button" class="button2" id="submit">Cancel</button>
+  						<button type="reset" class="button1" id="submit">Clear</button>
+  						<input type="button" class="add" name="Add" value="Add"/>
+  						<br><br>
+  			</form>
+
+			<table class="table">
+			 
+<thead>
+<tr style="margin-right: 500px;">
+    <td>
+    <button type="button" class="main-add" id="formButton">+Add</button>
+    </td>
+    
+    </tr>
+	<tr style="color: white">
+		<th></th>
+		<th>Customer Name</th>
+<th>Customer #</th>
+<th>Invoice #</th>
+<th>Invoice Amount</th>
+<th>Due Date</th>
+<th>Predicted Payment Date</th>
+<th>Notes</th>
+	</tr>
+</thead>
+<tbody>
+	<tr style="color: white">
+		        <td>
+  <input type="checkbox" style="background-color:rgba(45,66,80,255);height: 21px;
+  width: 21px; "/> &nbsp;</td>
+		         <td data-label="Customer Name">Raju</td>
+		        <td data-label="Customer Number (Customer #)">2523532</td>
+				<td data-label="Invoice Number (Invoice #)">9872703215</td>
+				<td data-label="Invoice Amount">122.876</td>
+				<td data-label="Due Date">23-jan-2021</td>
+				<td data-label="Predicted Payment Date">31-may-2021</td>
+				<td data-label="Notes">kkkk iiii lll</td>
+	</tr>
+	<tr style="color: white">
+ <td><input type="checkbox" style="background-color:rgba(45,66,80,255);height: 21px;
+  width: 21px; "/>  &nbsp;</td>
+		        
+		        <td data-label="Customer Name">Raju</td>
+		        <td data-label="Customer Number (Customer #)">2523532</td>
+				<td data-label="Invoice Number (Invoice #)">9872703215</td>
+				<td data-label="Invoice Amount">122.876</td>
+				<td data-label="Due Date">23-jan-2021</td>
+				<td data-label="Predicted Payment Date">31-may-2021</td>
+				<td data-label="Notes>Raju">kkkk iiii lll</td>
+	</tr>     
+            <tr style="color: white">
+	             <td style="background-color:rgba(45,66,80,255) "><input type="checkbox" style="background-color:rgba(45,66,80,255);height: 21px;width: 21px; "/> &nbsp;</td>
+	            
+	            <td data-label="Customer Name">Raju</td>
+		        <td data-label="Customer Number (Customer #)">2523532</td>
+				<td data-label="Invoice Number (Invoice #)">9872703215</td>
+				<td data-label="Invoice Amount">122.876</td>
+				<td data-label="Due Date">23-jan-2021</td>
+				<td data-label="Predicted Payment Date">31-may-2021</td>
+				<td data-label="Notes>Raju">kkkk iiii lll</td>
+	</tr>
+	<tr style="color: white">
+		        <td><input type="checkbox" style="background-color:rgba(45,66,80,255);height: 21px;width: 21px; "/> &nbsp; </td>
+		        
+		        <td data-label="Customer Name">Raju</td>
+		        <td data-label="Customer Number (Customer #)">2523532</td>
+				<td data-label="Invoice Number (Invoice #)">9872703215</td>
+				<td data-label="Invoice Amount">122.876</td>
+				<td data-label="Due Date">23-jan-2021</td>
+				<td data-label="Predicted Payment Date">31-may-2021</td>
+				<td data-label="Notes>Raju">kkkk iiii lll</td>
+	</tr>
+
+</tbody>
+			</table>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script type="text/javascript">
+				
+						$(document).ready(function() {
+  $("#formButton").click(function() {
+    $("#form1").toggle(100);
+  });
+});
+
+
+
+
+			</script>
+
+
+
+	</body>
+</html>
