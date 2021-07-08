@@ -1,0 +1,71 @@
+
+body{
+  background-color: rgba(45,66,80,255);  
+  color: white;
+}
+
+#popup{
+display: flex;
+justify-content: right;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: rgba(45,66,80,255);
+}
+
+.dataTables_filter{
+    text-align: left;
+    float: left;
+}
+#example_filter{
+    float: left;
+}
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+    border: 40px solid rgba(40,58,70,255);
+    background-color: rgba(45,66,80,255);
+}
+    
+    td {
+/*  border: 5px solid black;*/
+text-align: left;
+padding: 8px;
+
+}
+             th {
+/*  border:  solid #1a0000;*/
+text-align: left;
+padding: 8px;
+                  background-color: rgba(57,73,94,255);
+}
+
+tr:nth-child(even) {
+background-color: rgba(40,58,70,255);
+}
+    tr:nth-child(odd) {
+background-color: rgba(46,68,81,255);
+} 

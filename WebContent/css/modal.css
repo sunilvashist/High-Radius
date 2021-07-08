@@ -1,0 +1,213 @@
+body 
+{font-family: Arial, Helvetica, sans-serif;
+color:white;}
+
+/* The Modal (background) */
+.modal {
+  display: none;  /*Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; 
+    /* Location of the box */
+  left: 300px;
+  top: 100px;
+ width: 60%;  /*Full width */
+  height: 60%;  /*Full height*/ 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */  
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/*  display: flex;*/
+   
+}
+.modal-footer{
+    top: 656px;
+left: 458px;
+width: 1046px;
+height: 67px;
+opacity: 1;
+}
+/* Modal Content */
+.modal-content {
+  background-color: rgba(45,66,80,255);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+ justify-content: center;
+    align-items: center;
+}
+.modal-content p span{
+  color: red;
+}
+
+/* The Close Button */
+.close {
+  background-color: transparent;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cancel{
+    background-color: rgba(45,66,80,255);
+    border-color: rgba(45,66,80,255);
+    border: none;
+}
+.btn-clear{
+    
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+background-color: rgba(45,66,80,255);
+    margin-left: 430px;
+    color: white;
+}
+
+#addbtn{
+    background-color: #14AFF1; 
+    border: 1px solid #14AFF1 ;
+border-radius: 25px;
+opacity: 1; 
+}
+
+#savebtn{
+    background-color: #14AFF1; 
+    border: 1px solid #14AFF1 ;
+border-radius: 25px;
+opacity: 1; 
+}
+
+
+.modal-body2{
+    top: 210px;
+left: 689px;
+width: 500px;
+height: 200px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}
+
+/*Add part*/
+#Customer-Name{
+    top: 331px;
+left: 620px;
+width: 150px;
+height: 30px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 40px;
+    color: white; 
+}
+
+#Due-Date{
+      top: 331px;
+left: 883px;
+width: 150px;
+height: 30px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 25px;
+    color: white;
+}
+#Customer-No{
+     top: 331px;
+left: 620px;
+width: 150px;
+height: 30px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 19px;
+    color: white; 
+}
+#Invoice-No{
+      top: 331px;
+left: 620px;
+width: 150px;
+height: 30px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 43px;
+    color: white;
+}
+
+#Invoice-Amount{
+      top: 331px;
+left: 620px;
+width: 150px;
+height: 30px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 44px;
+    color: white;
+}
+#Notes{
+    top: 404px;
+    
+left: 883px;
+width: 250px;
+height: 150px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+/*    margin-left: 95px;*/
+/*    margin-right: 5px;*/
+    color: white;
+}
+
+
+/*End Add part*/
+
+
+/*Edit part css*/
+#Invoice-Amount2{
+    top: 331px;
+left: 620px;
+width: 319px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 27px;
+    color: white;
+}
+
+#Notes2{
+    top: 404px;
+    
+left: 890px;
+width: 319px;
+height: 120px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+    margin-left: 95px;
+    color: white;
+}
+/*End of Edit part*/
+
+.Label {
+  color: #97A1A9;
+    display: inline-block;
